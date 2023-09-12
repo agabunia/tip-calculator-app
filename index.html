@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&family=Merriweather&family=Montserrat:wght@300&family=Outfit:wght@300;400;600&family=Sacramento&family=Space+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main class="main">
+        <div class="input">
+            <div class="flex">
+                <p class="parag">Bill</p>
+                <p class="parag warning" id="warningBill">Can't be zero</p>
+            </div>
+            <div class="user-input">
+                <i class="fa fa-2xs fa-usd icon" aria-hidden="true"></i>
+                <form method="post">
+                    <input type="text" class="input-field" placeholder="0" id="bill">
+                </form>
+            </div>
+            <p class="parag">Select Tip %</p>
+            <div class="tips" id="tips">
+                <button class="tip-amount" id="tip-amount"><span id="number">5</span>%</button>
+                <button class="tip-amount" id="tip-amount"><span id="number">10<span>%</button>
+                <button class="tip-amount" id="tip-amount"><span id="number">15<span>%</button>
+                <button class="tip-amount" id="tip-amount"><span id="number">25<span>%</button>
+                <button class="tip-amount" id="tip-amount"><span id="number">50</span>%</button>
+                <button class="tip-amount-custom" id="customBtn">
+                    <input type="text" class="custom-input" id="customInp" placeholder="Custom">
+                </button>
+            </div>
+            <div class="flex">
+                <p class="parag">Number of People</p>
+                <p class="parag warning" id="warningPeople">Can't be zero</p>
+            </div>
+            <div class="user-input">
+                <i class="fa fa-2xs fa-user icon" aria-hidden="true"></i>
+                <form method="post">
+                    <input type="text" class="input-field" placeholder="0" id="numOfPeople">
+                </form>
+            </div>
+        </div>
+        <div class="output">
+            <div class="container">
+                <p class="parag addition"><span class="total">Tip Amount</span> <br>/ person</p>
+                <p class="calc-tip" id="tip-amount-para">$0.00</p>
+            </div>
+            <div class="container">
+                <p class="parag addition"><span class="total">Total</span> <br>/ person</p>
+                <p class="calc-tip" id="total-sum-para">$0.00</p>
+            </div>
+            <button class="reset-btn" id="reset-btn">RESET</button>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
